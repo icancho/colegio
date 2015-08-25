@@ -5,7 +5,9 @@
 </head>
 <body>
 <h1>HI fucking world</h1>
-{{school_data.name}}
-{{school_data.tel}}
+{%for x in school_data%}
+<h1>{{x.name}}</h1>
+<h1>{{x.tel}}</h1>
+{%endfor%}
 </body>
 </html>
